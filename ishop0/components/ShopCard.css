@@ -1,0 +1,52 @@
+﻿.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  /* border: 1px solid rgba(239, 118, 19, 1); */
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(239, 118, 19, 0.1);
+}
+
+.Card:hover {
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(239, 118, 19, 1);
+  border: 0;
+  cursor: pointer;
+}
+
+.ShopCards {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  background-color: white;
+}
+
+.Image {
+  width: 200px;  
+  height: 200px; 
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 10px;
+}
+
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Name {
+  color: rgba(239, 118, 19, 1);   
+  font-size: 20px;
+  margin: 5px;
+  /* min-width: 230px; */
+}
+
+.Cost {
+  /* color: rgba(239, 118, 19, 1);    */
+  font-size: 20px;
+  margin: 5px;
+  /* min-width: 230px; */
+}

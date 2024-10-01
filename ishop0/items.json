@@ -1,0 +1,7 @@
+[ 
+    {"code":1373, "name":"Свитер осенний", "cost":"50 BYN.", "balance":"372", "image":"https://i.pinimg.com/564x/05/3a/42/053a427c91d4c4d01a49cefb1ea1efed.jpg"},
+    {"code":2926, "name":"Тапочки домашние", "cost":"20 BYN.", "balance":"194", "image":"https://i.pinimg.com/564x/e6/55/e6/e655e637033c972f295ee0f736e36d3f.jpg"},
+    {"code":3017, "name":"Пижама праздничная", "cost":"60 BYN.", "balance":"62", "image":"https://i.pinimg.com/564x/4f/06/99/4f069976aca0980b53dca42ddce70a39.jpg"},
+    {"code":4865, "name":"Плед теплый", "cost":"70 BYN.", "balance":"85", "image":"https://i.pinimg.com/564x/97/5f/14/975f14d13dcbc15c4baef32da151a1e3.jpg"},
+    {"code":2064, "name":"Медведь плюшевый", "cost":"бесценно", "balance":"207", "image":"https://i.pinimg.com/564x/7c/d0/82/7cd082590f649cce7fcd41ec4684e167.jpg"}
+]

@@ -1,0 +1,10 @@
+body {
+    background-image: url('/home.jpg');
+    background-size: contain; 
+    background-repeat: repeat;
+    box-sizing: border-box;
+    height: fit-content;
+    font-family: 'Nunito Sans';
+    height: '100vh';
+    align-items: center;
+}
