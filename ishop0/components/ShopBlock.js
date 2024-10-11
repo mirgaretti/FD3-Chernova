@@ -6,11 +6,36 @@ import ShopText from './ShopText';
 import ShopCard from './ShopCard';
 
 class ShopBlock extends React.Component {
+  state = {
+    selectedCardCode: null,
+    cards: this.props.cards,
+  };
+
+  onCardSelect = (code) => {
+    this.setState({selectedCardCode: code});
+  }
+
+  onCardDelete = (code) => {
+    this.setState({
+      selectedCardCode: code === this.state.selectedCardCode ? null : this.state.selectedCardCode, 
+      cards: this.state.cards.filter( s => s.code !== code)
+    });
+  }
 
   render() {
 
-    const cardsCode=this.props.cards.map( s =>
-      <ShopCard key={s.code} name={s.name} cost={s.cost} balance={s.balance} image={s.image} />
+    const cardsCode=this.state.cards.map( s =>
+      <ShopCard 
+          key={s.code} 
+          code={s.code} 
+          name={s.name} 
+          cost={s.cost} 
+          balance={s.balance} 
+          image={s.image} 
+          isSelected={this.state.selectedCardCode === s.code}
+          onCardClick={this.onCardSelect}
+          onDeleteClick={this.onCardDelete}
+      />
     );
 
     return (
