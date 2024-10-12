@@ -1,0 +1,91 @@
+﻿.Filter
+{
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 100px auto;
+  box-shadow: 0px 2px 10px rgba(239, 118, 19, 1);
+}
+
+.FilterSettings
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+input[type="checkbox"] {
+  margin: 5px;
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 30px; 
+  height: 30px; 
+  border: 2px solid rgba(239, 118, 19, 1); 
+  border-radius: 3px; 
+  cursor: pointer; 
+  position: relative; 
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgba(239, 118, 19, 1);
+  border: 2px solid rgba(239, 118, 19, 1);
+}
+
+input[type="checkbox"]:checked::after {
+  content: ''; 
+  position: absolute;
+  left: 8px; 
+  top: 0px; 
+  width: 8px;
+  height: 20px;
+  border: solid white; 
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); 
+}
+
+input[type="text"] {
+  margin: 5px;
+  width: 150px; 
+  height: 30px; 
+  border: 2px solid rgba(239, 118, 19, 1); 
+  border-radius: 3px; 
+  cursor: pointer; 
+  padding: 0;
+  outline: none;
+  padding-left: 10px;
+  color: #727272;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: rgba(195, 195, 195, 1);
+  font-family: 'Nunito Sans'; 
+}
+
+.FilterButton
+{
+  margin: 5px;
+  width: 100px; 
+  height: 30px; 
+  border: 2px solid rgba(239, 118, 19, 1); 
+  border-radius: 3px; 
+  cursor: pointer; 
+  padding: 0;
+  outline: none;
+  color: white;
+  background-color: rgba(239, 118, 19, 1);
+}
+
+.FilterBlock
+{
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  /* width: max-content; */
+  height: 300px;
+  overflow-y: scroll;
+}
