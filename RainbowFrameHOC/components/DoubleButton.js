@@ -1,8 +1,9 @@
 import React from 'react';
+import './DoubleButton.css';
 
 const DoubleButton = ({ caption1, caption2, cbPressed, children }) => {
   return (
-    <div>
+    <div className='DoubleButton'>
       <input type="button" value={caption1}onClick={() => cbPressed(1)}/>
 
       {children}
