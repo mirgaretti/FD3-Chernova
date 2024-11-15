@@ -18,10 +18,6 @@ class ClientTable extends React.PureComponent {
         };
         this.setState({ clients: [...this.state.clients, client] });
     }
-    
-    handleFilterChange(event) {
-        this.setState({ filter: event.target.value });
-    }
 
     componentDidMount() {
         events.on('updateClient', (client) => {
