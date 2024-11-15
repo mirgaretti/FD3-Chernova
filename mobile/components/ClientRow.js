@@ -1,7 +1,7 @@
 import React from "react";
 import events from "../events";
 import './ClientRow.css';
-
+const { surname, name, father, balance } = this.refs
 class ClientRow extends React.PureComponent {
     constructor(props) {
         super(props);
@@ -14,6 +14,8 @@ class ClientRow extends React.PureComponent {
     state = {
         isEdit: false,
     };
+
+
 
     handleSave() {
         const client = { ...this.props.client };
