@@ -7,18 +7,21 @@ import { loadClients } from "../redux/loadClients";
 
 const ClientTable = () => {
     const dispatch = useDispatch();
+
     useEffect(() => {
-        dispatch(loadClients());
-    }, []);
-    const storeClients = useSelector( state => state.clients );
+        dispatch(loadClients()); 
+    }, [dispatch]); 
+
+    const storeClients = useSelector(state => state.clients.data); 
+    console.log(storeClients);
     const [filter, setFilter] = useState(null);
-    
+
     const onAddClick = () => {
         const client = {
             id: Date.now(),
-            surname: '',
-            name: '',
-            father: '',
+            fam: '',
+            im: '',
+            otch: '',
             balance: 0,
         };
         dispatch(addClient(client));
@@ -31,7 +34,7 @@ const ClientTable = () => {
         events.on('deleteClient', (id) => {
             dispatch(removeClient(id));
         });
-    }, []);
+    }, [dispatch]); 
 
     return (
         <div>

@@ -4,26 +4,32 @@ import './ClientRow.css';
 
 const ClientRow = (props) => {
     const [isEdit, setIsEdit] = useState(false);
-    const surname = useRef(null);
-    const name = useRef(null);
-    const father = useRef(null);
+    const fam = useRef(null);
+    const im = useRef(null);
+    const otch = useRef(null);
     const balance = useRef(null);
 
     const handleSave = () => {
         const { client } = props;
-        client.surname = surname && surname.current && surname.current.value;
-        client.name = name && name.current && name.current.value;
-        client.father = father && father.current && father.current.value;
-        client.balance = balance && balance.current && balance.current.value;
+
+        const updatedClient = {
+            ...client,
+            fam: fam.current?.value,
+            im: im.current?.value,
+            otch: otch.current?.value,
+            balance: Number(balance.current?.value), 
+        };
+
         setIsEdit(false);
-        events.emit('updateClient', client);
+        events.emit('updateClient', updatedClient);
     }
+
     console.log(props.client.id, 'render');
     return (
         <tr>
-            <td>{isEdit ? <input ref={surname} type="text" defaultValue={props.client.surname} /> : props.client.surname}</td>
-            <td>{isEdit ? <input ref={name} type="text" defaultValue={props.client.name} /> : props.client.name}</td>
-            <td>{isEdit ? <input ref={father} type="text" defaultValue={props.client.father} /> : props.client.father}</td>
+            <td>{isEdit ? <input ref={fam} type="text" defaultValue={props.client.fam} /> : props.client.fam}</td>
+            <td>{isEdit ? <input ref={im} type="text" defaultValue={props.client.im} /> : props.client.im}</td>
+            <td>{isEdit ? <input ref={otch} type="text" defaultValue={props.client.otch} /> : props.client.otch}</td>
             <td>{isEdit ? <input ref={balance} type="text" defaultValue={props.client.balance} /> : props.client.balance}</td>
             <td className={props.client.balance > 0 ? "active" : "blocked"}>{props.client.balance > 0 ? "active" : "blocked"}</td>
             <td>{isEdit ?
