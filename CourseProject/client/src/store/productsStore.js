@@ -1,4 +1,5 @@
 import { action, makeAutoObservable } from "mobx";
+import purchasesStore from "./purchasesStore";
 
 class ProductsStore {
     products = []; 
@@ -13,6 +14,7 @@ class ProductsStore {
             const response = await fetch(`/api/products?search=${searchQuery}&type=${selectedType}&display=${displayCount}&pages=${currentPage}`);
             const data = await response.json();
             this.setProducts(data.products);
+            purchasesStore.purchases.forEach(({ cart }) => this.reduceStock(cart));
             this.setCount(data.count);
         } catch (error) {
             console.error('Error fetching products:', error);
