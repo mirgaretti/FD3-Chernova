@@ -12,7 +12,7 @@ import './styles/styles.css';
 
 const App = observer(() => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [searchQuery, setSearchQuery] = useState(''); // Добавлено состояние поиска
+    const [searchQuery, setSearchQuery] = useState(''); 
 
     useEffect(() => {
         productsStore.fetchProducts();
