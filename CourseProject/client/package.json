@@ -1,0 +1,61 @@
+{
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@babel/preset-react": "^7.26.3",
+        "@testing-library/user-event": "^13.5.0",
+        "axios": "^1.7.8",
+        "jest": "^27.5.1",
+        "mobx": "^6.13.5",
+        "mobx-react": "^9.1.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^7.0.2",
+        "react-scripts": "5.0.1",
+        "react-test-renderer": "^18.3.1",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.16.0",
+        "@babel/preset-env": "^7.14.9",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "jest": "^26.6.3",
+        "globals": "^15.13.0",
+        "prettier": "^3.4.1"
+    },
+    "jest": {
+        "transform": {
+           "^.+\\.(js|jsx)$": "babel-jest"
+        }
+    }
+}

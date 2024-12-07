@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "name": "New Year Tree",
+    "price": 2500,
+    "stock": 34,
+    "rating": 4.7,
+    "image": "/images/01.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 2,
+    "name": "Tree Toy",
+    "price": 500,
+    "stock": 100,
+    "rating": 4.5,
+    "image": "/images/02.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 3,
+    "name": "Garland Set",
+    "price": 1500,
+    "stock": 50,
+    "rating": 4.6,
+    "image": "/images/05.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 4,
+    "name": "Christmas Balls",
+    "price": 100,
+    "stock": 200,
+    "rating": 4.8,
+    "image": "/images/03.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 5,
+    "name": "Christmas Star",
+    "price": 300,
+    "stock": 80,
+    "rating": 4.7,
+    "image": "/images/02.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 6,
+    "name": "Decoration Snowflakes",
+    "price": 200,
+    "stock": 150,
+    "rating": 4.4,
+    "image": "/images/11.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 7,
+    "name": "New Year Candles",
+    "price": 150,
+    "stock": 70,
+    "rating": 4.9,
+    "image": "/images/04.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 8,
+    "name": "Holiday Cards Set",
+    "price": 250,
+    "stock": 120,
+    "rating": 4.6,
+    "image": "/images/12.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 9,
+    "name": "Battery Snowman",
+    "price": 700,
+    "stock": 30,
+    "rating": 4.5,
+    "image": "/images/09.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 10,
+    "name": "Santa Claus Doll",
+    "price": 1200,
+    "stock": 40,
+    "rating": 4.8,
+    "image": "/images/07.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 11,
+    "name": "New Year Candy",
+    "price": 400,
+    "stock": 200,
+    "rating": 4.5,
+    "image": "/images/08.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 12,
+    "name": "Countdown Calendar",
+    "price": 600,
+    "stock": 55,
+    "rating": 4.7,
+    "image": "/images/10.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 13,
+    "name": "Christmas Ornaments",
+    "price": 350,
+    "stock": 90,
+    "rating": 4.9,
+    "image": "/images/07.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 14,
+    "name": "New Year Wreath",
+    "price": 800,
+    "stock": 40,
+    "rating": 4.6,
+    "image": "/images/05.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 15,
+    "name": "Tree Blanket",
+    "price": 1100,
+    "stock": 15,
+    "rating": 4.8,
+    "image": "/images/06.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 16,
+    "name": "Creative Set",
+    "price": 900,
+    "stock": 12,
+    "rating": 4.7,
+    "image": "/images/04.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 17,
+    "name": "Battery Garland",
+    "price": 450,
+    "stock": 28,
+    "rating": 4.6,
+    "image": "/images/07.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 18,
+    "name": "New Year Tinsel",
+    "price": 180,
+    "stock": 250,
+    "rating": 4.4,
+    "image": "/images/14.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 19,
+    "name": "Holiday Cups",
+    "price": 100,
+    "stock": 300,
+    "rating": 4.5,
+    "image": "/images/13.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 20,
+    "name": "New Year Tableware",
+    "price": 200,
+    "stock": 150,
+    "rating": 4.6,
+    "image": "/images/08.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 21,
+    "name": "Santa with Gifts",
+    "price": 1300,
+    "stock": 25,
+    "rating": 4.7,
+    "image": "/images/01.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 22,
+    "name": "Party Hats",
+    "price": 180,
+    "stock": 120,
+    "rating": 4.5,
+    "image": "/images/02.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 23,
+    "name": "Painting Set",
+    "price": 950,
+    "stock": 15,
+    "rating": 4.6,
+    "image": "/images/05.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 24,
+    "name": "Gift Bag",
+    "price": 220,
+    "stock": 60,
+    "rating": 4.5,
+    "image": "/images/06.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 25,
+    "name": "Toy Dog",
+    "price": 250,
+    "stock": 98,
+    "rating": 4.8,
+    "image": "/images/09.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 26,
+    "name": "Holiday Stickers",
+    "price": 70,
+    "stock": 300,
+    "rating": 4.7,
+    "image": "/images/08.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 27,
+    "name": "Kaleidoscope",
+    "price": 300,
+    "stock": 83,
+    "rating": 4.6,
+    "image": "/images/10.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 28,
+    "name": "Surprise Ball",
+    "price": 400,
+    "stock": 45,
+    "rating": 4.8,
+    "image": "/images/11.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 29,
+    "name": "Santa Hat",
+    "price": 150,
+    "stock": 120,
+    "rating": 4.5,
+    "image": "/images/08.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 30,
+    "name": "Warm Socks with Reindeer",
+    "price": 200,
+    "stock": 80,
+    "rating": 4.7,
+    "image": "/images/09.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 31,
+    "name": "Shopping Bag",
+    "price": 300,
+    "stock": 45,
+    "rating": 4.6,
+    "image": "/images/01.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 32,
+    "name": "Tea Gift Set",
+    "price": 650,
+    "stock": 20,
+    "rating": 4.7,
+    "image": "/images/04.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 33,
+    "name": "Christmas Pattern Mug",
+    "price": 450,
+    "stock": 50,
+    "rating": 4.5,
+    "image": "/images/03.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 34,
+    "name": "Candle Set",
+    "price": 500,
+    "stock": 30,
+    "rating": 4.8,
+    "image": "/images/02.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 35,
+    "name": "Christmas Tree with Lights",
+    "price": 2000,
+    "stock": 10,
+    "rating": 4.9,
+    "image": "/images/05.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 36,
+    "name": "Snow Maiden Doll",
+    "price": 1200,
+    "stock": 15,
+    "rating": 4.5,
+    "image": "/images/06.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 37,
+    "name": "Candy Set",
+    "price": 350,
+    "stock": 40,
+    "rating": 4.8,
+    "image": "/images/10.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 38,
+    "name": "New Year Pattern Blanket",
+    "price": 950,
+    "stock": 25,
+    "rating": 4.7,
+    "image": "/images/11.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 39,
+    "name": "Snow Globe",
+    "price": 800,
+    "stock": 12,
+    "rating": 4.9,
+    "image": "/images/12.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 40,
+    "name": "Outdoor Snow Covers",
+    "price": 200,
+    "stock": 85,
+    "rating": 4.4,
+    "image": "/images/10.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 41,
+    "name": "Gift Box",
+    "price": 100,
+    "stock": 500,
+    "rating": 4.2,
+    "image": "/images/13.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 42,
+    "name": "Holiday Cake",
+    "price": 1500,
+    "stock": 5,
+    "rating": 4.9,
+    "image": "/images/14.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 43,
+    "name": "Christmas Calendars",
+    "price": 500,
+    "stock": 60,
+    "rating": 4.8,
+    "image": "/images/15.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 44,
+    "name": "Candle Holder",
+    "price": 300,
+    "stock": 30,
+    "rating": 4.6,
+    "image": "/images/01.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 45,
+    "name": "Baking Set",
+    "price": 900,
+    "stock": 20,
+    "rating": 4.7,
+    "image": "/images/07.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 46,
+    "name": "Warm Velvet Robe",
+    "price": 1600,
+    "stock": 8,
+    "rating": 4.8,
+    "image": "/images/02.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 47,
+    "name": "Drink Flask",
+    "price": 450,
+    "stock": 35,
+    "rating": 4.6,
+    "image": "/images/08.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 48,
+    "name": "Aromatic Candle",
+    "price": 400,
+    "stock": 50,
+    "rating": 4.3,
+    "image": "/images/03.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 49,
+    "name": "Snowman Thermos",
+    "price": 750,
+    "stock": 20,
+    "rating": 4.9,
+    "image": "/images/05.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 50,
+    "name": "Tea Set",
+    "price": 800,
+    "stock": 60,
+    "rating": 4.7,
+    "image": "/images/06.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 51,
+    "name": "Reindeer Plush Toy",
+    "price": 800,
+    "stock": 20,
+    "rating": 4.7,
+    "image": "/images/01.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 52,
+    "name": "Snowflake Wall Decor",
+    "price": 300,
+    "stock": 65,
+    "rating": 4.5,
+    "image": "/images/02.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 53,
+    "name": "Christmas Card Set",
+    "price": 150,
+    "stock": 150,
+    "rating": 4.8,
+    "image": "/images/03.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 54,
+    "name": "Holiday Dish Towels",
+    "price": 250,
+    "stock": 80,
+    "rating": 4.6,
+    "image": "/images/04.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 55,
+    "name": "Festive Table Runner",
+    "price": 450,
+    "stock": 40,
+    "rating": 4.4,
+    "image": "/images/05.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 56,
+    "name": "Scented Candles",
+    "price": 350,
+    "stock": 60,
+    "rating": 4.5,
+    "image": "/images/06.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 57,
+    "name": "Christmas Wrapping Paper",
+    "price": 100,
+    "stock": 200,
+    "rating": 4.6,
+    "image": "/images/07.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 58,
+    "name": "Holiday Cookie Cutters",
+    "price": 200,
+    "stock": 100,
+    "rating": 4.8,
+    "image": "/images/08.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 59,
+    "name": "Winter Scarf",
+    "price": 350,
+    "stock": 50,
+    "rating": 4.9,
+    "image": "/images/09.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 60,
+    "name": "Chocolate Gift Set",
+    "price": 600,
+    "stock": 30,
+    "rating": 4.7,
+    "image": "/images/10.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 61,
+    "name": "Glitter Ornaments",
+    "price": 250,
+    "stock": 90,
+    "rating": 4.5,
+    "image": "/images/11.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 62,
+    "name": "Holiday Gift Bag",
+    "price": 300,
+    "stock": 125,
+    "rating": 4.6,
+    "image": "/images/12.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 63,
+    "name": "Light Up Snowman",
+    "price": 700,
+    "stock": 15,
+    "rating": 4.8,
+    "image": "/images/01.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 64,
+    "name": "Gingerbread House Kit",
+    "price": 900,
+    "stock": 25,
+    "rating": 4.5,
+    "image": "/images/02.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 65,
+    "name": "Sparkling Wine",
+    "price": 2500,
+    "stock": 10,
+    "rating": 4.9,
+    "image": "/images/03.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 66,
+    "name": "Artsy Decor Set",
+    "price": 1500,
+    "stock": 8,
+    "rating": 4.8,
+    "image": "/images/04.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 67,
+    "name": "Holiday Tableware Set",
+    "price": 800,
+    "stock": 30,
+    "rating": 4.6,
+    "image": "/images/05.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 68,
+    "name": "Christmas Muffins Pack",
+    "price": 1200,
+    "stock": 12,
+    "rating": 4.4,
+    "image": "/images/06.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 69,
+    "name": "Gift Card",
+    "price": 500,
+    "stock": 150,
+    "rating": 4.7,
+    "image": "/images/07.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 70,
+    "name": "Winter Gloves",
+    "price": 200,
+    "stock": 90,
+    "rating": 4.8,
+    "image": "/images/08.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 71,
+    "name": "Hot Cocoa Mix",
+    "price": 400,
+    "stock": 200,
+    "rating": 4.5,
+    "image": "/images/09.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 72,
+    "name": "Christmas Tree Skirt",
+    "price": 600,
+    "stock": 35,
+    "rating": 4.9,
+    "image": "/images/10.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 73,
+    "name": "Nutcracker Figurine",
+    "price": 850,
+    "stock": 20,
+    "rating": 4.6,
+    "image": "/images/11.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 74,
+    "name": "Winter Wonderland Puzzle",
+    "price": 300,
+    "stock": 100,
+    "rating": 4.7,
+    "image": "/images/12.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 75,
+    "name": "Personalized Stocking",
+    "price": 250,
+    "stock": 60,
+    "rating": 4.5,
+    "image": "/images/01.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 76,
+    "name": "Holiday Photo Frame",
+    "price": 120,
+    "stock": 150,
+    "rating": 4.8,
+    "image": "/images/02.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 77,
+    "name": "Festive Cocktail Kit",
+    "price": 1000,
+    "stock": 25,
+    "rating": 4.6,
+    "image": "/images/03.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 78,
+    "name": "Holiday Pet Treats",
+    "price": 400,
+    "stock": 50,
+    "rating": 4.7,
+    "image": "/images/04.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 79,
+    "name": "Cinnamon Sugar Cookies",
+    "price": 300,
+    "stock": 90,
+    "rating": 4.5,
+    "image": "/images/05.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 80,
+    "name": "Holiday Magic Mug",
+    "price": 250,
+    "stock": 110,
+    "rating": 4.8,
+    "image": "/images/06.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 81,
+    "name": "Fuzzy Slippers",
+    "price": 400,
+    "stock": 70,
+    "rating": 4.6,
+    "image": "/images/07.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 82,
+    "name": "Holiday Music Box",
+    "price": 600,
+    "stock": 35,
+    "rating": 4.9,
+    "image": "/images/08.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 83,
+    "name": "Decorative Pinecones",
+    "price": 250,
+    "stock": 120,
+    "rating": 4.7,
+    "image": "/images/09.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 84,
+    "name": "Winter Themed Candles",
+    "price": 200,
+    "stock": 80,
+    "rating": 4.5,
+    "image": "/images/10.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 85,
+    "name": "Holiday Headband",
+    "price": 150,
+    "stock": 70,
+    "rating": 4.7,
+    "image": "/images/11.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 86,
+    "name": "Festive Bookmarks",
+    "price": 100,
+    "stock": 150,
+    "rating": 4.8,
+    "image": "/images/12.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 87,
+    "name": "Holiday Wall Art",
+    "price": 300,
+    "stock": 90,
+    "rating": 4.6,
+    "image": "/images/01.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 88,
+    "name": "Winter View Art Print",
+    "price": 650,
+    "stock": 20,
+    "rating": 4.9,
+    "image": "/images/02.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 89,
+    "name": "Holiday Magnets Set",
+    "price": 500,
+    "stock": 40,
+    "rating": 4.7,
+    "image": "/images/03.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 90,
+    "name": "Winter Treats Gift Basket",
+    "price": 800,
+    "stock": 15,
+    "rating": 4.6,
+    "image": "/images/04.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 91,
+    "name": "Christmas Decorations Kit",
+    "price": 1200,
+    "stock": 5,
+    "rating": 4.5,
+    "image": "/images/05.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 92,
+    "name": "Holiday Recipe Book",
+    "price": 300,
+    "stock": 80,
+    "rating": 4.8,
+    "image": "/images/06.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 93,
+    "name": "DIY Gingerbread Kit",
+    "price": 400,
+    "stock": 50,
+    "rating": 4.6,
+    "image": "/images/07.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 94,
+    "name": "Winter Fun Activity Set",
+    "price": 210,
+    "stock": 90,
+    "rating": 4.8,
+    "image": "/images/08.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 95,
+    "name": "Crystal Snowflake Tree Topper",
+    "price": 500,
+    "stock": 25,
+    "rating": 4.9,
+    "image": "/images/09.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 96,
+    "name": "Frosted Pine Cone Garland",
+    "price": 650,
+    "stock": 10,
+    "rating": 4.6,
+    "image": "/images/10.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 97,
+    "name": "Holiday Assorted Chocolates",
+    "price": 400,
+    "stock": 50,
+    "rating": 4.8,
+    "image": "/images/11.png",
+    "type": "friends",
+    "color": "#436FFF"
+  },
+  {
+    "id": 98,
+    "name": "Magical Winter Scene Poster",
+    "price": 300,
+    "stock": 100,
+    "rating": 4.5,
+    "image": "/images/12.png",
+    "type": "family",
+    "color": "#06A44F"
+  },
+  {
+    "id": 99,
+    "name": "Personalized Holiday Ornament",
+    "price": 250,
+    "stock": 45,
+    "rating": 4.7,
+    "image": "/images/01.png",
+    "type": "prime",
+    "color": "#FF43C7"
+  },
+  {
+    "id": 100,
+    "name": "Winter Nightlights",
+    "price": 420,
+    "stock": 20,
+    "rating": 4.5,
+    "image": "/images/02.png",
+    "type": "friends",
+    "color": "#436FFF"
+  }
+]
