@@ -129,6 +129,7 @@ const Gifts = ({ products, searchQuery }) => {
                                 <button
                                     onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
                                     disabled={currentPage === 1}
+                                    style={{ cursor: currentPage === 1 ? 'not-allowed' : 'pointer' }}
                                 >
                                     <img src="/images/arrow-left.svg" alt="arrow" />
                                 </button>
@@ -138,6 +139,7 @@ const Gifts = ({ products, searchQuery }) => {
                                 <button
                                     onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
                                     disabled={currentPage === totalPages}
+                                    style={{ cursor: currentPage === totalPages ? 'not-allowed' : 'pointer' }}
                                 >
                                     <img src="/images/arrow-right.svg" alt="arrow" />
                                 </button>
@@ -149,6 +151,7 @@ const Gifts = ({ products, searchQuery }) => {
                                 <button
                                     onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
                                     disabled={currentPage === 1}
+                                    style={{ cursor: currentPage === 1 ? 'not-allowed' : 'pointer' }}
                                 >
                                     <img src="/images/arrow-left.svg" alt="arrow" />
                                 </button>
@@ -158,6 +161,7 @@ const Gifts = ({ products, searchQuery }) => {
                                 <button
                                     onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
                                     disabled={currentPage === totalPages}
+                                    style={{ cursor: currentPage === totalPages ? 'not-allowed' : 'pointer' }}
                                 >
                                     <img src="/images/arrow-right.svg" alt="arrow" />
                                 </button>

@@ -885,6 +885,31 @@ h2 {
     .tabs {
         width: fit-content;
     }
+    
+    .product-info {
+        width: fit-content;
+    }
+    .cart .cart-products {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart .detailed-list p {
+        height: 35px;
+    }
+    .purchase-bill .total {
+        font-size: 17px;
+    }
+    .purchase-bill .time p {
+        font-size: 12px;
+    }
+    .purchase-bill .item p {
+        font-size: 11px;
+    }
+    .purchases .purchases-products {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
 }
 
 /* animation */
