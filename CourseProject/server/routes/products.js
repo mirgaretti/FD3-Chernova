@@ -10,19 +10,30 @@ router.get('/', (req, res) => {
             console.error(err);
             return res.status(500).json({ error: 'Error reading data' });
         }
+
         const allProducts = JSON.parse(data);
-        
-        const searchQuery = req.query.search; 
+        const searchQuery = req.query.search || '';
+        const selectedType = req.query.type || 'all';
+        const displayCount = parseInt(req.query.display) || 8;
+        const currentPage = parseInt(req.query.pages) || 1;
+
+        let filteredProducts = allProducts.filter(product =>
+            selectedType === 'all' || product.type === selectedType
+        );
+
         if (searchQuery) {
-            const filteredProducts = allProducts.filter(product =>
+            filteredProducts = filteredProducts.filter(product =>
                 product.name.toLowerCase().includes(searchQuery.toLowerCase())
             );
-            const matchedIds = filteredProducts.map(product => product.id);
-            console.log('Matched IDs:', matchedIds);
-            return res.json(matchedIds);
         }
 
-        return res.json(allProducts);
+        const startIndex = (currentPage - 1) * displayCount;
+        const paginatedProducts = filteredProducts.slice(startIndex, startIndex + displayCount);
+
+        return res.json({
+            count: filteredProducts.length,
+            products: paginatedProducts
+        });
     });
 });
 

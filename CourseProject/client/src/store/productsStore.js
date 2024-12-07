@@ -1,26 +1,31 @@
-import { makeAutoObservable } from "mobx";
-import axios from "axios"; // Не забудьте импортировать axios
+import { action, makeAutoObservable } from "mobx";
 
 class ProductsStore {
     products = []; 
+    count = 0;
 
     constructor() {
         makeAutoObservable(this);
-        this.fetchProducts(); 
     }
 
-    fetchProducts = async () => {
+    fetchProducts = action(async (searchQuery = '', selectedType = 'all', displayCount = 8, currentPage = 1) => {
         try {
-            const response = await axios.get('/api/products');
-            this.setProducts(response.data); 
+            const response = await fetch(`/api/products?search=${searchQuery}&type=${selectedType}&display=${displayCount}&pages=${currentPage}`);
+            const data = await response.json();
+            this.setProducts(data.products);
+            this.setCount(data.count);
         } catch (error) {
-            console.error("Error fetching products:", error);
+            console.error('Error fetching products:', error);
         }
-    };
+    });
 
     setProducts = (products) => {
         this.products = products; 
     };
+
+    setCount = (count) => {
+        this.count = count;
+    }
 
     reduceStock = (cart) => {
         cart.forEach(({ id, count }) => {

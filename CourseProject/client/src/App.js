@@ -45,7 +45,6 @@ const App = observer(() => {
     }, [cartStore.cart, purchasesStore.purchases]);
 
     const handleSearchChange = (query) => {
-        console.log(query);
         setSearchQuery(query); 
     };
 
@@ -102,7 +101,7 @@ const App = observer(() => {
                 </div>
 
                 <Routes>
-                    <Route path="/gifts" element={<Gifts products={productsStore.products} searchQuery={searchQuery} />} /> {/* Передача searchQuery */}
+                    <Route path="/gifts" element={<Gifts searchQuery={searchQuery} />} />
                     <Route path="/cart" element={<Cart products={productsStore.products} onPurchase={action(handleUpdateStock)} width={windowWidth} />} />
                     <Route path="/purchases" element={<Purchases products={productsStore.products} />} />
                 </Routes>

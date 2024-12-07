@@ -6,7 +6,6 @@ import purchasesStore from '../store/purchasesStore';
 
 const Purchases = observer(() => {
     const allPurchases = purchasesStore.purchases;
-    console.log('allPurchases', allPurchases);
     const [currentPage, setCurrentPage] = useState(0);
     const itemsPerPage = 4;
     const startIndex = currentPage * itemsPerPage;

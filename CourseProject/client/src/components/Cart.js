@@ -44,9 +44,7 @@ const Cart = observer(({ products, onPurchase, width }) => {
             });
         }, 300);
     };
-    console.log(cartStore.calculateTotal());
     const { total = 0, detailedList = [] } = cartStore.calculateTotal() || {}; 
-    console.log('detailedList', toJS(detailedList));
 
     return (
         <div className="main">
@@ -98,7 +96,7 @@ const Cart = observer(({ products, onPurchase, width }) => {
                             ))}
                         </div>
                         <div className='total-bottom'>
-                            <input type="text" placeholder='enter promotional code' onInput={e => setPromo(e.target.value)}/>
+                            <input type="text" placeholder='enter promocode' onInput={e => setPromo(e.target.value)}/>
                             <button onClick={() => onPurchase(promo, total)}>purchase</button>
                         </div>
                     </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import { toJS } from 'mobx';
 
 const PurchaseBill = ({ purchase }) => {
-    console.log(toJS(purchase))
     const date = new Date(purchase.time);
     const formattedDate = date.toLocaleString('ru-RU', {
         year: 'numeric',

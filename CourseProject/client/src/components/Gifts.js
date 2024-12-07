@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useHref, useSearchParams } from 'react-router-dom';
 import ProductCard from './ProductCard';
 import ProductInfo from './ProductInfo';
+import productsStore from '../store/productsStore';
+import { observer } from 'mobx-react';
+import { set } from 'mobx';
 
-const Gifts = ({ products, searchQuery }) => {
-    const [searchParams] = useSearchParams();
+const Gifts = observer(({ searchQuery }) => {
+    const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
+    const [history] = useHref();
     const [displayCount, setDisplayCount] = useState(searchParams.get('display') || 8);
     const [currentPage, setCurrentPage] = useState(searchParams.get('pages') || 1);
     const [selectedType, setSelectedType] = useState(searchParams.get('type') ||'all');
     const [currentProduct, setCurrentProduct] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [filteredProducts, setFilteredProducts] = useState(products);
-
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
@@ -31,49 +33,18 @@ const Gifts = ({ products, searchQuery }) => {
         if (display) setDisplayCount(parseInt(display));
         if (page) setCurrentPage(parseInt(page));
         setSelectedType(type);
-    }, []);
-
-    useEffect(() => {
-        navigate(`?display=${displayCount}&pages=${currentPage}&type=${selectedType}`);
-    }, [displayCount, currentPage, selectedType, navigate]);
-
-    useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await fetch(`/api/products?search=${searchQuery}`);
-                const data = await response.json();
-                const matchedProducts = products.filter(product => data.includes(product.id));
-                setFilteredProducts(matchedProducts); 
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        };
-
-        if (searchQuery) {
-            fetchProducts(); 
-        } else {
-            setFilteredProducts(products); 
-        }
-    }, [searchQuery, products]);
+        productsStore.fetchProducts(searchQuery, type, display, page);
+    }, [searchParams, searchQuery]);
 
     const handleTabClick = (count) => {
-        setDisplayCount(count);
-        setCurrentPage(1);
+        setSearchParams({ display: count, pages: 1, type: selectedType });
     };
 
     const handleTypeChange = (type) => {
-        setSelectedType(type);
-        setCurrentPage(1);
+        setSearchParams({ display: displayCount, pages: 1, type });
     };
 
-    const startIndex = (currentPage - 1) * displayCount;
-    const endIndex = startIndex + displayCount;
-
-    const currentProducts = filteredProducts.filter(product => 
-        selectedType === 'all' || product.type === selectedType
-    );
-
-    const totalPages = Math.ceil(currentProducts.length / displayCount);
+    const totalPages = Math.ceil(productsStore.count / displayCount);
 
     const renderTabs = () => {
         const tabCounts = [8, 20, 40, 60];
@@ -113,7 +84,7 @@ const Gifts = ({ products, searchQuery }) => {
         <>
             {currentProduct && (
                 <ProductInfo
-                    product={products.find((product) => product.id === currentProduct)}
+                    product={productsStore.products.find((product) => product.id === currentProduct)}
                     onClose={() => setCurrentProduct(null)}
                 />
             )}
@@ -127,7 +98,7 @@ const Gifts = ({ products, searchQuery }) => {
                             {renderTypeSelectors()}
                             <div>
                                 <button
-                                    onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
+                                    onClick={() => setSearchParams({ display: displayCount, pages: Math.max(currentPage - 1, 1), type: selectedType })}
                                     disabled={currentPage === 1}
                                     style={{ cursor: currentPage === 1 ? 'not-allowed' : 'pointer' }}
                                 >
@@ -137,7 +108,11 @@ const Gifts = ({ products, searchQuery }) => {
                                     Page {currentPage} of {totalPages}
                                 </p>
                                 <button
-                                    onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
+                                    onClick={() => setSearchParams({
+                                        display: displayCount,
+                                        pages: Math.min(currentPage + 1, totalPages),
+                                        type: selectedType,
+                                    })}
                                     disabled={currentPage === totalPages}
                                     style={{ cursor: currentPage === totalPages ? 'not-allowed' : 'pointer' }}
                                 >
@@ -149,7 +124,11 @@ const Gifts = ({ products, searchQuery }) => {
                         <>
                             <div>
                                 <button
-                                    onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
+                                    onClick={() => setSearchParams({
+                                        display: displayCount,
+                                        pages: Math.max(currentPage - 1, 1),
+                                        type: selectedType,
+                                    })}
                                     disabled={currentPage === 1}
                                     style={{ cursor: currentPage === 1 ? 'not-allowed' : 'pointer' }}
                                 >
@@ -159,7 +138,11 @@ const Gifts = ({ products, searchQuery }) => {
                                     Page {currentPage} of {totalPages}
                                 </p>
                                 <button
-                                    onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
+                                    onClick={() => setSearchParams({
+                                        display: displayCount,
+                                        pages: Math.min(currentPage + 1, totalPages),
+                                        type: selectedType,
+                                    })}
                                     disabled={currentPage === totalPages}
                                     style={{ cursor: currentPage === totalPages ? 'not-allowed' : 'pointer' }}
                                 >
@@ -171,7 +154,7 @@ const Gifts = ({ products, searchQuery }) => {
                     )}
                 </div>
                 <div className="container">
-                    {currentProducts.slice(startIndex, endIndex).map((product) => (
+                    {productsStore.products && productsStore.products.map((product) => (
                         <ProductCard
                             key={product.id}
                             product={product}
@@ -183,6 +166,6 @@ const Gifts = ({ products, searchQuery }) => {
             </div>
         </>
     );
-};
+});
 
 export default Gifts;

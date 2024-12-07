@@ -7,7 +7,6 @@ const ProductInfo = ({ product, onClose }) => {
     const [productCount, setProductCount] = useState(cartStore.cart.find(item => item.id === product.id)?.count || 1);
 
     const addProduct = action(() => {
-        console.log('cartStore', toJS(cartStore.cart));
         cartStore.updateCart(product, productCount);
         onClose();
     })
